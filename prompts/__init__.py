@@ -68,17 +68,26 @@ You are going to write a JSON resume section for an applicant applying for job p
 Consider the following CV:
 <CV_TEXT>
 
-Now consider the following TypeScript Interface for the JSON schema:
-
-interface Basics {
-    name: string;
-    email: string;
-    phone: string;
-    website: string;
-    address: string;
+Provide this as JSON with the following schema:
+{
+    "basics": {
+        "name": string,
+        "label": string,
+        "email": string,
+        "phone": string,
+        "website": string,
+        "summary": string,
+        "location": {
+            "address": string,
+            "postalCode": string,
+            "city": string,
+            "countryCode": string,
+            "region": string
+        }
+    
 }
-
-Correct any incorrect formatting and remove undue whitespaces
+Correct any incorrect formatting and remove undue whitespaces.
+Return empty strings for any missing fields.
 Write the basics section according to the Basic schema in accordance with the JSON Resume Schema. On the response, include only the JSON.
 """
 
