@@ -223,10 +223,10 @@ def generate_json_resume(cv_text):
     for prompt in stqdm(
         [
             BASICS_PROMPT,
-            EDUCATION_PROMPT,
-            AWARDS_PROMPT,
-            PROJECTS_PROMPT,
-            SKILLS_PROMPT,
+            #EDUCATION_PROMPT,
+            #AWARDS_PROMPT,
+            #PROJECTS_PROMPT,
+            #SKILLS_PROMPT,
             WORK_PROMPT,
         ],
         desc="This may take a while...",
